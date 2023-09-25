@@ -21,7 +21,7 @@ jobs:
 
       - name: Cache node modules
         id: cache-nodemodules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-node-modules
         with:
@@ -47,7 +47,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-file: "false"
+          output-file: "true"
 
       - name: Create Release
         uses: actions/create-release@v1
