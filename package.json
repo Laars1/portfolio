@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href https://laars1.github.io/portfolio/"
+    "deploy": "ng deploy --base-href https://laars1.github.io/portfolio/ --no-silent"
   },
   "private": true,
   "dependencies": {
