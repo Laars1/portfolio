@@ -1,0 +1,21 @@
+ul.navbar-nav > li > a{
+    padding: 0 20px;
+}
+
+
+body{
+    --navbar-scroll: transparent; 
+    --navbar-scroll-text: black;
+    --navbar-scroll-shadow: none;
+   }
+
+nav.navbar {
+background-color: var(--navbar-scroll);
+transition: background-color 0.5s ease;
+-webkit-box-shadow: var(--navbar-scroll-shadow);
+box-shadow: var(--navbar-scroll-shadow);
+}
+
+.navbar-brand, .nav-link{
+    color: var(--navbar-scroll-text)!important;
+}
