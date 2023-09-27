@@ -3,36 +3,31 @@
     <div class="col-sm-2">
       <a class="navbar-brand float-end text-uppercase" href="#">Portfolio</a>
     </div>
-      <button
-        class="navbar-toggler float-end"
-        type="button"
-        (click)="this.toggleMenuItems()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div [ngClass]="this.showMenuItems ? 'show' : ''" class="collapse navbar-collapse offset-sm-6 col-sm-4">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
+    <button
+      class="navbar-toggler float-end"
+      type="button"
+      (click)="this.toggleMenuItems()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      [ngClass]="this.showMenuItems ? 'show' : ''"
+      class="collapse navbar-collapse offset-sm-6 col-sm-4"
+    >
+      <ul class="navbar-nav text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Abount</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
