@@ -16,13 +16,10 @@ export class NavbarComponent implements OnInit {
 
   scroll = (): void => {
     if(window.scrollY > 50){
-      document.body.style.setProperty('--navbar-scroll', "black");
-      document.body.style.setProperty('--navbar-scroll-text', "white");
-      document.body.style.setProperty('--navbar-scroll-shadow', "0px 6px 12px -5px #000000");
+      document.body.style.setProperty('--navbar-border-bottom', "1px solid #000");
     }else{
-      document.body.style.setProperty('--navbar-scroll', "transparent");
-      document.body.style.setProperty('--navbar-scroll-text', "black");
-      document.body.style.setProperty('--navbar-scroll-shadow', "none");
+      document.body.style.setProperty('--navbar-border-bottom', "none");
+
     }
   }
 

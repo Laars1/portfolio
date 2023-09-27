@@ -1,7 +1,10 @@
 <app-navbar></app-navbar>
   <div>
     <main role="main">
-      <app-portfolio-section></app-portfolio-section>
+      <app-portfolio-section [alternativeColor]="false"></app-portfolio-section>
+      <app-portfolio-section [alternativeColor]="true"></app-portfolio-section>
+      <app-portfolio-section [alternativeColor]="false"></app-portfolio-section>
+      <app-portfolio-section [alternativeColor]="true"></app-portfolio-section>
       <router-outlet></router-outlet>
     </main>
   </div>

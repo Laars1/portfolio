@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PortfolioSectionComponent implements OnInit {
 
+  @Input() alternativeColor = false;
   constructor() { }
 
   ngOnInit() {
