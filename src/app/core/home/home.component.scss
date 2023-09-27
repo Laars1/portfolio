@@ -1,0 +1,28 @@
+p.bubble {
+	// layout
+	position: relative;
+	max-width: 6em;
+    left: 20%;
+	
+	// looks
+    color: #FFF;
+	padding: 0.4125em 0.8em;
+	font-size: 1.25em;
+	border-radius: 0.25rem;
+    background-color: var(--background-tertiary);
+}
+
+p.bubble::before {
+	// layout
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 100%;
+	right: 1.5em; // offset should move with padding of parent
+	border: .75rem solid transparent;
+
+	// looks
+	border-top-color: var(--background-tertiary);
+	filter: drop-shadow(0 0.0625rem -0.0625rem rgba(0, 0, 0, .1));
+}

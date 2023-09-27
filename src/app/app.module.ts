@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { PortfolioSectionComponent } from './shared/components/portfolio-section/portfolio-section.component';
+import { HomeComponent } from './core/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent],
+  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
