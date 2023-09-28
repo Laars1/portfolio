@@ -27,6 +27,7 @@ p.bubble::before {
 	filter: drop-shadow(0 0.0625rem -0.0625rem rgba(0, 0, 0, .1));
 }
 
+// Adapted from here: https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle
 .circle {
 	width: 100px;
 	height: 100px;
