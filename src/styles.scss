@@ -1,4 +1,5 @@
 @import "bootstrap/scss/bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 
 body{
     --background-primary: #F2EDE4;
@@ -7,12 +8,33 @@ body{
     --background-alternative: #BF3E21;
     --background-alternative2: #BF533B;
     --background-alternative3: #733224;
-
     --font-color: #000;
+
     color: var(--font-color);
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 div.row{
     margin-left: 0;
     margin-right: 0;
 }
+
+// Adapted from https://codepen.io/szpakoli/pen/zYKqoJ
+hr.header{
+  
+    border: 0;
+    height: 2px;
+    width: 10%;
+    position: relative;
+    margin: 30px auto;
+    background: var(--background-alternative);
+  }

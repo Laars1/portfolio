@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { PortfolioSectionComponent } from './shared/components/portfolio-section/portfolio-section.component';
 import { HomeComponent } from './core/home/home.component';
+import { AboutComponent } from './core/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, HomeComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
