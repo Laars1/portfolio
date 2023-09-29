@@ -1,10 +1,15 @@
 @import "bootstrap/scss/bootstrap";
 
 body{
-    --background-primary: #FFF2E1;
-    --background-secondary: #756F67;
-    --background-tertiary: #36332F;
-    --background-alternative: #e65446;
+    --background-primary: #F2EDE4;
+    --background-secondary: #f8f6f1;
+    --background-tertiary: #260101;
+    --background-alternative: #BF3E21;
+    --background-alternative2: #BF533B;
+    --background-alternative3: #733224;
+
+    --font-color: #000;
+    color: var(--font-color);
 }
 
 div.row{

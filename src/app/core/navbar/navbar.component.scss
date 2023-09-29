@@ -10,5 +10,8 @@ body{
 nav.navbar {
     background-color: var(--background-primary);
     border-bottom: var(--navbar-border-bottom);
-    // font-weight: bold;
+}
+
+.navbar-brand, .nav-link{
+    color: var(--font-color);
 }

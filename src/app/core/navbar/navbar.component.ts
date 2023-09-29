@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
   scroll = (): void => {
     if(window.scrollY > 50){
-      document.body.style.setProperty('--navbar-border-bottom', "1px solid #000");
+      document.body.style.setProperty('--navbar-border-bottom', "1px solid var(--font-color)");
     }else{
       document.body.style.setProperty('--navbar-border-bottom', "none");
 
