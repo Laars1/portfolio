@@ -1,10 +1,9 @@
+// Adapted speech bubble from here: https://codepen.io/rikschennink/pen/mjywQb
 p.bubble {
-	// layout
 	position: relative;
 	max-width: 6em;
     left: 20%;
 
-	// looks
     color: var(--background-secondary);
 	padding: 0.4125em 0.8em;
 	font-size: 1.25em;
@@ -13,7 +12,6 @@ p.bubble {
 }
 
 p.bubble::before {
-	// layout
 	content: '';
 	position: absolute;
 	width: 0;
@@ -22,15 +20,14 @@ p.bubble::before {
 	right: 1.5em; // offset should move with padding of parent
 	border: .75rem solid transparent;
 
-	// looks
 	border-top-color: var(--background-tertiary);
 	filter: drop-shadow(0 0.0625rem -0.0625rem rgba(0, 0, 0, .1));
 }
 
 // Adapted from here: https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle
 .circle {
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 	padding: 15px;
 	border-radius: 50%;
 	margin: 0 auto;
@@ -39,9 +36,9 @@ p.bubble::before {
   }
 
   .circle2 {
-	width: 70px;
-	height: 70px;
-	padding: 10px 0;
+	width: 90px;
+	height: 90px;
+	padding: 20px 0;
 	border-radius: 50%;
 	color: var(--background-secondary);
 	text-align: center;

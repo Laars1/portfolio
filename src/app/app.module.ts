@@ -8,9 +8,10 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { PortfolioSectionComponent } from './shared/components/portfolio-section/portfolio-section.component';
 import { HomeComponent } from './core/home/home.component';
 import { AboutComponent } from './core/about/about.component';
+import { SectionHeaderComponent } from './shared/components/section-header/section-header.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, HomeComponent, AboutComponent],
+  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
