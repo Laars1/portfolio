@@ -18,14 +18,31 @@ h1{
     font-weight: 800;
 }
 
-h4{
+h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+
+p{
+    font-size: 18px;
+}
+
+p.content{
+    text-align: justify;
 }
 
 div.row{
     margin-left: 0;
     margin-right: 0;
+}
+
+$sizes: 10, 20, 30, 40, 50, 60, 70, 80, 90;
+@for $i from 1 through length($sizes){
+    $value: nth($sizes, $i);
+    $viewheight: 1vh * $value;
+    .min-vh-#{$value} { 
+        min-height: $viewheight!important;
+        }
 }
 
 // Adapted from https://codepen.io/szpakoli/pen/zYKqoJ
