@@ -9,9 +9,11 @@ import { PortfolioSectionComponent } from './shared/components/portfolio-section
 import { HomeComponent } from './core/home/home.component';
 import { AboutComponent } from './core/about/about.component';
 import { SectionHeaderComponent } from './shared/components/section-header/section-header.component';
+import { SkillItemComponent } from './shared/components/skill-item/skill-item.component';
+import { SkillWrapperComponent } from './shared/components/skill-wrapper/skill-wrapper.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent],
+  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent, SkillWrapperComponent, SkillItemComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
