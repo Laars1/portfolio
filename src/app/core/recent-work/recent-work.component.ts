@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubApiService } from 'src/app/shared/services/github.service';
 
 @Component({
   selector: 'app-recent-work',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentWorkComponent implements OnInit {
 
-  constructor() { }
+  constructor(private githubService: GithubApiService) { }
 
   ngOnInit() {
+    this.githubService.getPublicReposFromUser('laars1').subscribe(x => {
+      console.log(x);
+    })
   }
 
 }

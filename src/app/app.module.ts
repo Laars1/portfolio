@@ -12,10 +12,11 @@ import { SectionHeaderComponent } from './shared/components/section-header/secti
 import { SkillItemComponent } from './shared/components/skill-item/skill-item.component';
 import { SkillWrapperComponent } from './shared/components/skill-wrapper/skill-wrapper.component';
 import { RecentWorkComponent } from './core/recent-work/recent-work.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent, RecentWorkComponent, SkillWrapperComponent, SkillItemComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
