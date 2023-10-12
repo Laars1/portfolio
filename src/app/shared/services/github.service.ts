@@ -5,8 +5,9 @@ import {
   HttpHeaders,
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 import { environment } from 'src/environments/environments';
+import { Octokit } from '@octokit/rest';
 
 @Injectable({
   providedIn: 'root',
@@ -14,24 +15,12 @@ import { environment } from 'src/environments/environments';
 export class GithubApiService {
   private readonly baseApiUrl = environment.baseUrl;
   errorMsg = 'An error occured, please check the console';
+  octokit = new Octokit();
 
   constructor(private httpClient: HttpClient) {}
-
-  /**
-   * Get request
-   * @param {string} path The API endpoint path to retrieve data from.
-   * @returns {Observable<TResponse>} An Observable response containing the retrieved data.
-   */
-  public get<TResponse>(path: string): Observable<TResponse> {
-    return this.httpClient.get<TResponse>(this.baseApiUrl + path).pipe(
-      catchError((error: HttpErrorResponse) => {
-        console.error(this.errorMsg, error);
-        return throwError(() => new Error(error.message));
-      })
-    );
-  }
-
-  public getPublicReposFromUser<TResponse>(username: string) : Observable<TResponse>{
-    return this.get('users/'+username+'/repos');
+  public async getReposFromUser(userName: string) {
+    return await this.octokit.request('GET /users/{owner}/repos', {
+      owner: userName,
+    });
   }
 }
