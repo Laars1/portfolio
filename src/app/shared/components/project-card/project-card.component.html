@@ -17,11 +17,11 @@
       <p class="card-text">
         {{ item.description }}
       </p>
-      <app-skill-item
+      <app-tag-item
         *ngFor="let tag of item.tags"
         [tag]="tag"
         [spacing]="'p-1 mb-1 me-1'"
-      ></app-skill-item>
+      ></app-tag-item>
     </div>
     <div class="card-footer">
       <a

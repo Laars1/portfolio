@@ -1,7 +1,7 @@
 <div [ngClass]="isFirstItem(item) ? '' : 'mt-4'" *ngFor="let item of data">
   <h4 class="text-uppercase">{{item.title}}</h4>
-  <app-skill-item
+  <app-tag-item
     *ngFor="let tag of item.items"
     [tag]="tag"
-  ></app-skill-item>
+  ></app-tag-item>
 </div>

@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SkillItemComponent } from './skill-item.component';
+import { SkillItemComponent } from './tag-item.component';
 
 describe('SkillItemComponent', () => {
   let component: SkillItemComponent;

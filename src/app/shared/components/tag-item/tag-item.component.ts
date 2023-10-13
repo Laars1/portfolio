@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-skill-item',
-  templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.scss']
+  selector: 'app-tag-item',
+  templateUrl: './tag-item.component.html',
+  styleUrls: ['./tag-item.component.scss']
 })
-export class SkillItemComponent implements OnInit {
+export class TagItemComponent implements OnInit {
   @Input() tag = ""
   @Input() spacing = "p-2 me-3 mb-3"
   constructor() { }
