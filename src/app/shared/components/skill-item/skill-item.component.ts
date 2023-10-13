@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillItemComponent implements OnInit {
   @Input() tag = ""
+  @Input() spacing = "p-2 me-3 mb-3"
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="card col-md-4 col-12 mt-1 me-3 mb-3" *ngFor="let item of data">
+    <div class="card-body">
+      <h5 class="card-title">
+        <div class="row p-0 m-0">
+          <div class="col-9 p-0 m-0">
+            <a href="{{ item.url }}" class="card-link" target="_blank">{{ item.fullname }} </a>
+          </div>
+          <div class="col-3 p-0 m-0">
+            <div class="type float-end">
+              <i class="bi bi-check-circle"></i>
+              public
+            </div>
+          </div>
+        </div>
+      </h5>
+      <p class="card-text">
+        {{ item.description }}
+      </p>
+      <app-skill-item
+        *ngFor="let tag of item.tags"
+        [tag]="tag"
+        [spacing]="'p-1 mb-1 me-1'"
+      ></app-skill-item>
+    </div>
+    <div class="card-footer">
+      <a
+        href="{{ item.homepage }}"
+        class="btn btn-primary"
+        *ngIf="item.homepage"
+        >Open Application</a
+      >
+    </div>
+  </div>
+</div>

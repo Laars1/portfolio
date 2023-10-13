@@ -13,9 +13,10 @@ import { SkillItemComponent } from './shared/components/skill-item/skill-item.co
 import { SkillWrapperComponent } from './shared/components/skill-wrapper/skill-wrapper.component';
 import { RecentWorkComponent } from './core/recent-work/recent-work.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectCardComponent } from './shared/components/project-card/project-card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent, RecentWorkComponent, SkillWrapperComponent, SkillItemComponent],
+  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent, RecentWorkComponent, SkillWrapperComponent, SkillItemComponent, ProjectCardComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

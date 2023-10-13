@@ -1,9 +1,62 @@
-div{
+// Adpated from here: https://codepen.io/Jab2870/pen/mEKgBX
+div.brackets{
+    text-decoration:none;
+    font-family:Helvetica;
+    font-weight: lighter;
+    vertical-align:top;
+    transition: color .2s ease;
     background-color: var(--background-tertiary);
     color: var(--background-secondary);
     border-radius: 0.25rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
     font-weight: 600;
-}
-
+  }
+  
+  .brackets{
+    &::before, &::after{
+      opacity:0;
+      transition: opacity 0.2s ease, transform 0.3s ease;
+      position:relative;
+      display:inline-block;
+    }
+  
+    &::before{
+      content:"[";
+      transform: translateX(20px);
+      margin-right:.2em;
+    }
+  
+    &::after{
+      content:"]";
+      transform: translateX(-20px);
+      margin-left:.2em;
+    }
+  
+    &:hover{
+      color: #ececec;
+      &::before,&::after{
+        opacity:1;
+        transform: translateX(0);
+      }
+    }
+  
+  
+    &.brackets2{
+      &::before{
+        transform:translateX(-20px);
+      }
+      &::after{
+        transform:translateX(20px);
+      }
+  
+      &:hover{
+        &::before{
+          transform:translateX(0px);
+        }
+        &::after{
+          transform:translateX(0px);
+        }
+      }
+  
+    }
+  
+  }
