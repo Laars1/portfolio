@@ -1,0 +1,18 @@
+.icons > a{
+    font-size: 30px;
+    padding: 10px;
+    color: var(--background-secondary);
+}
+
+.icons > a:hover{
+    color: var(--background-primary);
+}
+
+footer{
+    background-color: var(--background-tertiary);
+    color: var(--background-secondary);
+}
+
+p{
+    font-size: 14px;
+}

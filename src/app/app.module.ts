@@ -14,9 +14,22 @@ import { SkillWrapperComponent } from './shared/components/skill-wrapper/skill-w
 import { RecentWorkComponent } from './core/recent-work/recent-work.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectCardComponent } from './shared/components/project-card/project-card.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PortfolioSectionComponent, SectionHeaderComponent, HomeComponent, AboutComponent, RecentWorkComponent, SkillWrapperComponent, TagItemComponent, ProjectCardComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    PortfolioSectionComponent,
+    SectionHeaderComponent,
+    HomeComponent,
+    AboutComponent,
+    RecentWorkComponent,
+    SkillWrapperComponent,
+    TagItemComponent,
+    ProjectCardComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

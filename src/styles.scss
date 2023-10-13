@@ -24,6 +24,18 @@ body{
     border-color: var(--background-alternative2);
 }
 
+.btn-secondary{
+    background-color: var(--background-secondary);
+    border-color: var(--background-secondary);
+    color: var(--background-tertiary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--background-primary);
+    border-color: var(--background-primary);
+    color: var(--background-tertiary);
+}
+
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -38,6 +50,12 @@ h4{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
 
 a{
     font-family: 'Open Sans', sans-serif;
