@@ -15,6 +15,8 @@ import { RecentWorkComponent } from './core/recent-work/recent-work.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectCardComponent } from './shared/components/project-card/project-card.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { ExperienceComponent } from './core/experience/experience.component';
+import { ExperienceItemComponent } from './shared/components/experience-item/experience-item.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FooterComponent } from './core/footer/footer.component';
     TagItemComponent,
     ProjectCardComponent,
     FooterComponent,
+    ExperienceComponent,
+    ExperienceItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
