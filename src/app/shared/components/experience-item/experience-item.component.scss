@@ -1,7 +1,3 @@
-body{
-    --circle-color: none; 
-}
-
 .timeline-item-header::before {
     content: '';
     display: inline-block;
@@ -12,7 +8,14 @@ body{
     border: 5px solid;
     z-index: 2;
     margin-left: -2.1em;
-    color: var(--circle-color);
+}
+
+.default-color::before{
+    color: var(--background-alternative)
+}
+
+.alternative-color::before{
+    color: var(--background-alternative3)
 }
 
 .timeline-item-body{

@@ -12,8 +12,6 @@ export class ExperienceItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let color = this.alternativeColor ? "var(--background-alternative)" : "var(--background-alternative3)"
-    document.body.style.setProperty('--circle-color', color);
   }
 
 }
