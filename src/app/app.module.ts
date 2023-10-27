@@ -18,6 +18,13 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ExperienceComponent } from './core/experience/experience.component';
 import { ExperienceItemComponent } from './shared/components/experience-item/experience-item.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
+import { Router, Scroll } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs/operators';
+
 @NgModule({
   declarations: [
     AppComponent,

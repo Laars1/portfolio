@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ISkillItem } from 'src/app/shared/dtos/skill-item';
+import { MockdataService } from 'src/app/shared/services/mockdata.service';
 
 @Component({
   selector: 'app-about',
@@ -8,43 +9,11 @@ import { ISkillItem } from 'src/app/shared/dtos/skill-item';
 })
 
 export class AboutComponent implements OnInit {
-  skills: ISkillItem[] = [
-    {
-      title: "my main skills",
-      items: [
-        'Frontend- / Backend-Systems',
-        'HTML',
-        'CSS',
-        'C#',
-        '.Net Core',
-        'PostgreSQL',
-        'ASP.Net Core',
-        'Scrum',
-      ]
-    },
-    {
-      title: "further skills",
-      items: [
-        'Terraform',
-        'SQL',
-        'Blazor Webassembly',
-        'Jenkins',
-        'Xamarin',
-        'Kanban',
-      ]
-    },
-    {
-      title: "my language skills",
-      items: [
-        'German - Native Language',
-        'English - C1',
-        'French - B2',
-      ]
-    }
-  ]
+  skills: ISkillItem[] = []
 
-  constructor() {}
+  constructor(private service: MockdataService) {}
 
   ngOnInit() {
+    this. skills = this.service.getSkillitems()
   }
 }

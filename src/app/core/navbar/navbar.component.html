@@ -14,18 +14,18 @@
       [ngClass]="this.showMenuItems ? 'show' : ''"
       class="collapse navbar-collapse offset-sm-6 col-sm-4"
     >
-      <ul class="navbar-nav text-center">
+      <ul class="navbar-nav text-center" (click)="this.toggleMenuItems()">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" routerLink="." fragment="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" routerLink="." fragment="about">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="." fragment="experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recent Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Contact</a>
+          <a class="nav-link" routerLink="." fragment="recent">Recent Work</a>
         </li>
       </ul>
     </div>
