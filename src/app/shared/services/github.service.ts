@@ -10,10 +10,10 @@ export class GithubApiService {
   octokit = new Octokit();
 
   constructor() {}
-  public async getReposFromUser(userName: string) {
+  public async getReposFromUser(userName: string) : Promise<IGithubProject[]> {
     return await this.octokit
       .request('GET /users/{owner}/repos', {
-        owner: userName,
+        owner: "adsf",
       })
       .then((x) => {
         return x.data.map((item: any) => {
@@ -29,7 +29,8 @@ export class GithubApiService {
         });
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
+        return []
       });
   }
 }

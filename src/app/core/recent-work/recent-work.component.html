@@ -25,7 +25,7 @@
         class="img-fluid w-100"
       />
     </div>
-    <div class="col-12 mt-4">
+    <div class="col-12 mt-4" *ngIf="!data">
       <h3 class="text-uppercase">My personal Github projects</h3>
       <app-project-card [data]="data"></app-project-card>
     </div>
