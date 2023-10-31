@@ -4,10 +4,10 @@
       <span class="text-muted h6">at {{item.companyName}}</span>
     </h5>
   </div>
-  <div class="px-4 pb-4 timeline-item-body">
+  <div class="px-4 pb-3 timeline-item-body">
     <div class="text-muted text-small">{{item.timerange}}</div>
-    <div class="text-muted text-small mb-3">{{item.place}}</div>
-    <div>
+    <div class="text-muted text-small mb-2">{{item.place}}</div>
+    <div *ngIf="item.description">
       {{item.description}}
     </div>
   </div>

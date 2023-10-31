@@ -2,6 +2,6 @@ export interface IExperienceItem{
     jobtitle: string;
     companyName: string;
     timerange: string;
-    description: string;
+    description?: string;
     place: string;
 }

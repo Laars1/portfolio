@@ -13,7 +13,7 @@ export class GithubApiService {
   public async getReposFromUser(userName: string) : Promise<IGithubProject[]> {
     return await this.octokit
       .request('GET /users/{owner}/repos', {
-        owner: "adsf",
+        owner: userName,
       })
       .then((x) => {
         return x.data.map((item: any) => {
@@ -30,7 +30,7 @@ export class GithubApiService {
       })
       .catch((error) => {
         console.error(error);
-        return []
+        return null
       });
   }
 }

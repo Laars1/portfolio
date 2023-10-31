@@ -49,7 +49,7 @@ export class MockdataService {
         companyName: 'Swiss Post',
         timerange: 'August 2020 - present',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
+          'Dual role as software engineer and coach at ICT Academy. On the one hand, the focus is on the methodical and technical training of apprentices in an interdisciplinary team of apprentices. On the other hand, I worked on internal customer projects. There I can gain my experience as a full-stack developer as well as a Scrum master.',
         place: 'Bern, Switzerland',
       },
       {
@@ -58,7 +58,7 @@ export class MockdataService {
         companyName: 'Swiss Post',
         timerange: 'August 2016 - July 2020',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
+          'training as a software engineer. during the four years i worked in two different teams and was able to apply the theory i had learned in practice. i gained the most experience in web development with .Net and Angular.',
         place: 'Bern, Switzerland',
       },
     ] as IExperienceItem[];
@@ -71,7 +71,7 @@ export class MockdataService {
         companyName: 'Bern Universityof Applied Sciences',
         timerange: 'September 2021 - July 2025',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
+          "I'm currently pursuing a degree in Business Information Technology at the University of Applied Science, where I'm gaining a deep understanding of how technology drives business innovation. This program provides me with a well-rounded education, combining the principles of IT with the strategic aspects of business to prepare me for a diverse range of opportunities in the tech industry.",
         place: 'Bern, Switzerland',
       },
       {
@@ -79,15 +79,13 @@ export class MockdataService {
         companyName: 'berufsbildner.ch',
         timerange: 'November 2020',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
+          'Through the two-week course, I acquired the theoretical skills to instruct apprentices.',
         place: 'Bern, Switzerland',
       },
       {
         jobtitle: 'Federal Vocational Baccalaureate',
         companyName: 'gibb',
         timerange: 'August 2016 - July 2020',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
         place: 'Bern, Switzerland',
       },
       {
@@ -95,7 +93,7 @@ export class MockdataService {
         companyName: 'gibb',
         timerange: 'August 2016 - July 2020',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa',
+          'Vocational school for training as a software engineer',
         place: 'Bern, Switzerland',
       },
     ] as IExperienceItem[];
