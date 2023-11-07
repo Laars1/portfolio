@@ -17,6 +17,9 @@ import { ProjectCardComponent } from './shared/components/project-card/project-c
 import { FooterComponent } from './core/footer/footer.component';
 import { ExperienceComponent } from './core/experience/experience.component';
 import { ExperienceItemComponent } from './shared/components/experience-item/experience-item.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -41,7 +44,7 @@ import { filter } from 'rxjs/operators';
     ExperienceComponent,
     ExperienceItemComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule, NgxTypedJsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
