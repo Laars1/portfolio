@@ -1,51 +1,56 @@
 // Adapted speech bubble from here: https://codepen.io/rikschennink/pen/mjywQb
 p.bubble {
-	position: relative;
-	max-width: 6em;
-    left: 20%;
+  position: relative;
+  max-width: 6em;
+  left: 20%;
 
-    color: var(--background-secondary);
-	padding: 0.4125em 0.8em;
-	font-size: 1.25em;
-	border-radius: 0.25rem;
-    background-color: var(--background-tertiary);
+  color: var(--background-secondary);
+  padding: 0.4125em 0.8em;
+  font-size: 1.25em;
+  border-radius: 0.25rem;
+  background-color: var(--background-tertiary);
 }
 
 p.bubble::before {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	top: 100%;
-	right: 1.5em; // offset should move with padding of parent
-	border: .75rem solid transparent;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  right: 1.5em; // offset should move with padding of parent
+  border: 0.75rem solid transparent;
 
-	border-top-color: var(--background-tertiary);
-	filter: drop-shadow(0 0.0625rem -0.0625rem rgba(0, 0, 0, .1));
+  border-top-color: var(--background-tertiary);
+  filter: drop-shadow(0 0.0625rem -0.0625rem rgba(0, 0, 0, 0.1));
 }
 
 // Adapted from here: https://stackoverflow.com/questions/16615403/how-to-draw-a-circle-with-text-in-the-middle
 .circle {
-	width: 120px;
-	height: 120px;
-	padding: 15px;
-	border-radius: 50%;
-	margin: 0 auto;
-	text-align: center;
-	background: lighten(#BF533B,20%);
-  }
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background: lighten(#bf533b, 20%);
+}
 
-  .circle2 {
-	width: 90px;
-	height: 90px;
-	padding: 20px 0;
-	border-radius: 50%;
-	color: var(--background-secondary);
-	text-align: center;
-	background: var(--background-alternative);
-	font-family: 'Courier New', monospace;
-  }
+.circle2 {
+  width: 90px;
+  height: 90px;
+  padding: 20px 0;
+  border-radius: 50%;
+  color: var(--background-secondary);
+  text-align: center;
+  background: var(--background-alternative);
+  font-family: "Courier New", monospace;
+  transition: all 0.2s ease-in-out;
+}
 
-  .typing-background{
-	color: var(--background-alternative);
-  }
+.circle2:hover {
+  transform: scale(1.05);
+}
+
+.typing-background {
+  color: var(--background-alternative);
+}
