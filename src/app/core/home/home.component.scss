@@ -43,7 +43,6 @@ p.bubble::before {
   color: var(--background-secondary);
   text-align: center;
   background: var(--background-alternative);
-  font-family: "Courier New", monospace;
   transition: all 0.2s ease-in-out;
 }
 
@@ -53,4 +52,10 @@ p.bubble::before {
 
 .typing-background {
   color: var(--background-alternative);
+}
+
+a{
+  color: var(--background-secondary);
+  text-decoration: none;
+  font-family: "Courier New", monospace;
 }
