@@ -4,10 +4,16 @@
       <div class="card-body">
         <h5 class="card-title">
           <div class="row p-0 m-0">
-            <div class="col-9 p-0 m-0">
+            <div class="p-0 m-0" [ngClass]="item.forked ? 'col-6' : 'col-9' ">
               <a href="{{ item.url }}" class="card-link" target="_blank"
                 >{{ item.fullname }}
               </a>
+            </div>
+            <div class="col-3 p-0 m-0" *ngIf="item.forked">
+              <div class="type float-end">
+                <i class="bi bi-sign-intersection-y"></i>
+                fork
+              </div>
             </div>
             <div class="col-3 p-0 m-0">
               <div class="type float-end">

@@ -17,8 +17,10 @@ export class GithubApiService {
       })
       .then((x) => {
         return x.data.map((item: any) => {
+          console.log(item)
           let data: IGithubProject = {
             id: item.id,
+            forked: item.fork,
             url: item.html_url,
             description: item.description,
             fullname: item.full_name,
