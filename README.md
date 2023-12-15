@@ -1,5 +1,9 @@
 # Portfolio
 
+## Github actions result
+[![CI / CD for portfolio page](https://github.com/Laars1/portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/Laars1/portfolio/actions/workflows/main.yml)
+[![pages-build-deployment](https://github.com/Laars1/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Laars1/portfolio/actions/workflows/pages/pages-build-deployment)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Development server
