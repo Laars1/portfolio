@@ -1,5 +1,11 @@
 # Portfolio
 
+[![CI / CD for portfolio page](https://github.com/Laars1/portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/Laars1/portfolio/actions/workflows/main.yml)
+[![pages-build-deployment](https://github.com/Laars1/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Laars1/portfolio/actions/workflows/pages/pages-build-deployment)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/Laars1/portfolio)
+![GitHub issues](https://img.shields.io/github/issues/Laars1/portfolio)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Development server
