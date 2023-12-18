@@ -66,7 +66,7 @@ export class MockdataService {
         companyName: 'Swiss Post',
         timerange: 'August 2016 - July 2020',
         description:
-          'training as a software engineer. during the four years i worked in two different teams and was able to apply the theory i had learned in practice. i gained the most experience in web development with .Net and Angular.',
+          'training as a software engineer. during the four years i worked in two different teams and was able to apply the theory i had learned in practice. I gained the most experience in web development with .Net and Angular.',
         place: 'Bern, Switzerland',
       },
     ] as IExperienceItem[];
