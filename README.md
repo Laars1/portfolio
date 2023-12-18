@@ -6,32 +6,15 @@
 ![GitHub issues](https://img.shields.io/github/issues/Laars1/portfolio)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+## About this project
+This project was created and developed as part of the Web Engineering module at the Bern University of Applied Science.
 
-## Development server
+## Starting the program
+To start the project, the repository can be cloned and then started with the command below.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+npm install
+ng serve --open
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Deployment
-To build a new version of the app use following command
-`ng build --configuration production --base-href https://laars1.github.io/portfolio/`
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Alternatively, the page can also be accessed via the following URL: https://laars1.github.io/portfolio/
