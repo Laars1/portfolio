@@ -45,9 +45,17 @@ export class MockdataService {
   getExperienceItems(): IExperienceItem[] {
     return [
       {
+        jobtitle: 'Software-Engineer',
+        companyName: 'Swiss Post',
+        timerange: 'December 2023 - present',
+        description:
+          'As a software developer in the sorting cluster at the Swiss Post, I work in a team that is currently developing an application for tracking lost shipments. Due to the re-development, quality and efficient case analysis are the main priorities.',
+        place: 'Bern, Switzerland',
+      },
+      {
         jobtitle: 'Software-Engineer and Coach ICT Academy',
         companyName: 'Swiss Post',
-        timerange: 'August 2020 - present',
+        timerange: 'August 2020 - November 2023',
         description:
           'Dual role as software engineer and coach at ICT Academy. On the one hand, the focus is on the methodical and technical training of apprentices in an interdisciplinary team of apprentices. On the other hand, I worked on internal customer projects. There I can gain my experience as a full-stack developer as well as a Scrum master.',
         place: 'Bern, Switzerland',
