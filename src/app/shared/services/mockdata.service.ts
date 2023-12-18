@@ -76,7 +76,7 @@ export class MockdataService {
     return [
       {
         jobtitle: "Bachelor's degree in Business Information Technology",
-        companyName: 'Bern Universityof Applied Sciences',
+        companyName: 'Bern University of Applied Sciences',
         timerange: 'September 2021 - July 2025',
         description:
           "I'm currently pursuing a degree in Business Information Technology at the University of Applied Science, where I'm gaining a deep understanding of how technology drives business innovation. This program provides me with a well-rounded education, combining the principles of IT with the strategic aspects of business to prepare me for a diverse range of opportunities in the tech industry.",
